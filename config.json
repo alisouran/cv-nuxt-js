@@ -117,7 +117,7 @@
     "description": {
       "paragraph_1": "I am a computer science graduated from University of Kashan.",
       "paragraph_2": "I have been learning different technologies for nearly five years and have been working as a web developer in this field for four years; I am a React Native starter. :)",
-      "paragraph_3": "I used to work as a freelancer, but now I'm working as a frontend developer at <img src='_nuxt/assets/img/icons/virgool.svg' /> Virgool."
+      "paragraph_3": "I used to work as a freelancer, but now I'm working as a frontend developer at <a target='_blank' href='https://virgool.io'>Virgool.io</a>."
     }
   }
 }

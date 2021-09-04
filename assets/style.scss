@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  color: var(--vue--color);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

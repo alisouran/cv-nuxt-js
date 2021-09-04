@@ -1,5 +1,12 @@
 <template>
   <div>
+    <div
+      :id="loading ? '' : 'hideMe'"
+      class="loading"
+      :class="loading ? '' : 'loading--deactive'"
+    >
+      <img src="~/assets/img/icons/android-chrome-512x512.png" />
+    </div>
     <Navbar />
     <div
       class="container-md main-container"
@@ -40,11 +47,13 @@ export default Vue.extend({
       title: "",
       subtitle: "",
       className: "",
-      route: ""
+      route: "",
+      loading: true
     };
   },
   methods: {},
   mounted() {
+    this.loading = false;
     if (this.$nuxt.$route.path === "/") {
       this.title = json.name.first;
       this.subtitle = json.name.last;
@@ -90,6 +99,57 @@ export default Vue.extend({
     min-height: auto;
   }
 }
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary--color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.8s;
+  overflow: hidden !important;
+  & img {
+    max-width: 100%;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &--deactive {
+    opacity: 0;
+  }
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 1.8s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 1.8s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 1.8s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 1.8s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
 .main-row {
   align-content: space-between;
 
