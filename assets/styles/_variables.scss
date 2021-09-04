@@ -1,33 +1,19 @@
-$font-sizes: (
-  '10': 10px,
-  '11': 11px,
-  '12': 12px,
-  '14': 14px,
-  '16': 16px,
-  '18': 18px,
-  '22': 22px,
-  '24': 24px,
-  '28': 28px,
-  '36': 36px,
-);
 $margin: (
-  '16': 16px,
-  '12': 12px,
-  '24': 24px,
-  '36': 36px,
-  '8': 8px,
-  '6': 6px,
-  '0': 0px,
+  "16": 16px,
+  "12": 12px,
+  "24": 24px,
+  "36": 36px,
+  "8": 8px,
+  "6": 6px,
+  "0": 0px
 );
-
-$font-weight: bold normal 100 200 600 900;
 
 $width-height: (
-  '25': 25%,
-  '50': 50%,
-  '75': 75%,
-  '100': 100%,
-  'auto': auto,
+  "25": 25%,
+  "50": 50%,
+  "75": 75%,
+  "100": 100%,
+  "auto": auto
 );
 
 :root {
@@ -42,14 +28,8 @@ $width-height: (
   --express--color: #333333;
   --react-native--color: #00d8ff;
   --flutter--color: #3fa9f5;
-  --drawer--color: #303F9F;
+  --drawer--color: #303f9f;
 
-  @each $key, $val in $font-sizes {
-    --font-size--#{$key}: #{$val};
-  }
-  @each $key in $font-weight {
-    --font-weight--#{$key}: #{$key};
-  }
   @each $key, $val in $margin {
     --margin--#{$key}: #{$val};
   }

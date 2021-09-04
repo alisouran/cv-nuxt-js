@@ -11,61 +11,11 @@ body {
   }
 }
 
-h1 {
-  font-size: var(--font-size--36);
-}
-
-h2 {
-  font-size: var(--font-size--28);
-}
-
-h3 {
-  font-size: var(--font-size--22);
-}
-
-h4 {
-  font-size: var(--font-size--18);
-}
-
-h5 {
-  font-size: var(--font-size--14);
-}
-
-h6 {
-  font-size: var(--font-size--10);
-}
-
-span {
-  font-size: var(--font-size--14);
-}
-
-p {
-  font-size: var(--font-size--16);
-}
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
   font-family: 'Alatsi', sans-serif;
-}
-
-.ltr {
-  direction: ltr !important;
-}
-
-.text-left-justify {
-  text-align: justify !important;
-  text-align-last: left !important;
-}
-.text-right-justify {
-  text-align: justify !important;
-  text-align-last: right !important;
-}
-
-.text-center-justify {
-  text-align: justify !important;
-  text-align-last: center !important;
 }
 
 $text-align: justify center right left unset;
@@ -91,25 +41,12 @@ $float: left right none;
   }
 }
 
-$user-select: all auto none;
-@each $key in $user-select {
-  .user-select-#{$key} {
-    user-select: $key !important;
-  }
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
-$overflow: auto hidden visible scroll;
-@each $key in $overflow {
-  .overflow-#{$key} {
-    overflow: $key !important;
-  }
-}
-
-$position: static relative absolute fixed sticky;
-@each $key in $position {
-  .position-#{$key} {
-    position: $key;
-  }
+.position-absolute{
+  position: absolute;
 }
 
 @each $key, $val in $width-height {
@@ -174,20 +111,7 @@ hr {
   }
 }
 
-@each $key, $val in $font-sizes {
-  .fs-#{$key} {
-    font-size: #{$val};
-  }
-}
-
-@each $val in $font-weight {
-  .fw-#{$val} {
-    font-weight: #{$val};
-  }
-}
-
-$align-items: normal stretch center start end flex-start flex-end baseline
-  inherit initial revert unset;
+$align-items: normal center start end flex-start flex-end unset;
 
 @each $val in $align-items {
   .align-#{$val} {
@@ -196,25 +120,11 @@ $align-items: normal stretch center start end flex-start flex-end baseline
 }
 
 $justify-content: center start flex-start flex-end left right normal
-  space-between space-around space-evenly stretch;
+  space-between space-around stretch;
 
 @each $val in $justify-content {
   .justify-content-#{$val} {
     justify-content: #{$val} !important;
-  }
-}
-
-.flex-direction-column{
-  flex-direction: column;
-  &--reverse{
-    flex-direction: column-reverse;
-  }
-}
-
-.flex-direction-row{
-  flex-direction: row;
-  &--reverse{
-    flex-direction: row-reverse;
   }
 }
 
