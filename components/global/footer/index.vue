@@ -5,22 +5,30 @@
       :class="mobile || tablet ? 'justify-content-center' : ''"
     >
       <div>
-        <div class="d-inline-flex align-center">
-          <img class="mw-100" src="~/assets/img/icons/virgool.svg" />
-          <span class="social-text ml-8">BLOG</span>
-        </div>
-        <div class="d-inline-flex align-center ml-16">
-          <img class="mw-100" src="~/assets/img/icons/github.svg" />
-          <span class="social-text ml-8">GITHUB</span>
-        </div>
-        <div v-if="!mobile" class="d-inline-flex align-center ml-16">
-          <img class="mw-100" src="~/assets/img/icons/dribbble.svg" />
-          <span class="social-text ml-8">DRIBBBLE</span>
-        </div>
-        <div class="d-inline-flex align-center ml-16">
-          <img class="mw-100" src="~/assets/img/icons/linkedin.svg" />
-          <span class="social-text ml-8">LINKEDIN</span>
-        </div>
+        <a target="_blank" href="https://blog.alisouran.ir">
+          <div class="d-inline-flex align-center">
+            <img class="mw-100" src="~/assets/img/icons/virgool.svg" />
+            <span class="social-text ml-8">BLOG</span>
+          </div>
+        </a>
+        <a target="_blank" href="https://github.com/alisouran">
+          <div class="d-inline-flex align-center ml-16">
+            <img class="mw-100" src="~/assets/img/icons/github.svg" />
+            <span class="social-text ml-8">GITHUB</span>
+          </div>
+        </a>
+        <!-- <a v-if="!mobile" target="_blank" href="https://github.com/alisouran">
+          <div class="d-inline-flex align-center ml-16">
+            <img class="mw-100" src="~/assets/img/icons/dribbble.svg" />
+            <span class="social-text ml-8">DRIBBBLE</span>
+          </div>
+        </a> -->
+        <a target="_blank" href="https://www.linkedin.com/in/alisouran/">
+          <div class="d-inline-flex align-center ml-16">
+            <img class="mw-100" src="~/assets/img/icons/linkedin.svg" />
+            <span class="social-text ml-8">LINKEDIN</span>
+          </div>
+        </a>
       </div>
       <!-- <span class="float-right">ALIREZA SOURAN</span> -->
     </div>
@@ -28,12 +36,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import mqMixin from '@/mixins/mqMixin';
+import Vue from "vue";
+import mqMixin from "@/mixins/mqMixin";
 
 export default Vue.extend({
-  name: 'Footer',
-  mixins: [mqMixin],
+  name: "Footer",
+  mixins: [mqMixin]
 });
 </script>
 
@@ -48,6 +56,7 @@ footer {
 }
 .social-text {
   font-size: 1em;
+  color: var(--secondary--color);
   @media screen and (max-width: 768px) and (min-height: 1024px) {
     font-size: 1.2em;
   }
