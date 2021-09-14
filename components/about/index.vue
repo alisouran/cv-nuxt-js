@@ -70,7 +70,11 @@
         <ProgressCircle
           :data="data[skill.slug]"
           :notExpandedTitle="skill.title"
-          :notExpandedPct="skill.subtitle"
+          :notExpandedPct="
+            yearsDiff(skill.subtitle) === 1
+              ? yearsDiff(skill.subtitle) + ' YEAR'
+              : yearsDiff(skill.subtitle) + ' YEARS'
+          "
           :expanded="active === skill.slug"
           :size="progressSize"
           :mobile="mobile"
@@ -102,15 +106,16 @@
 import Vue from "vue";
 import ProgressCircle from "@/library/progress-circle/index.vue";
 import mqMixin from "~/mixins/mqMixin";
+import yearsDiffMixin from "~/mixins/yearsDiffMixin";
 import json from "@/config.json";
 
 export default Vue.extend({
   name: "AboutTool",
-  transition: { name: "fade", mode: 'out-in' },
+  transition: { name: "fade", mode: "out-in" },
   components: {
     ProgressCircle
   },
-  mixins: [mqMixin],
+  mixins: [mqMixin, yearsDiffMixin],
   data() {
     return {
       active: "skills",
