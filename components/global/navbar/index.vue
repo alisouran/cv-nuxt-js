@@ -10,7 +10,13 @@
         <NuxtLink class="navbar--item" to="/about">About</NuxtLink>
         <NuxtLink class="navbar--item" to="/contact">Contact</NuxtLink>
       </div>
-      <button class="float-right btn">DOWNLOAD CV</button>
+      <a
+        href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+        class="float-right btn"
+        aria-label="resume"
+      >
+        DOWNLOAD CV
+      </a>
     </nav>
     <nav v-if="mobile" class="navbar w-100">
       <button @click="toggleMenu()" class="btn icon-btn quiet">
@@ -105,7 +111,13 @@
           </g>
         </svg>
       </button>
-      <button class="float-right btn mr-8">DOWNLOAD CV</button>
+      <a
+        href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+        class="float-right btn mr-8"
+        aria-label="resume"
+      >
+        DOWNLOAD CV
+      </a>
     </nav>
     <div
       class="w-100 drawer--container"
@@ -122,7 +134,13 @@
         <NuxtLink class="navbar--item mr-0" to="/contact">
           Contact
         </NuxtLink>
-        <button class="float-right btn">DOWNLOAD CV</button>
+        <a
+          href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+          class="float-right btn mb-36"
+          aria-label="resume"
+        >
+          DOWNLOAD CV
+        </a>
       </div>
     </div>
   </div>
