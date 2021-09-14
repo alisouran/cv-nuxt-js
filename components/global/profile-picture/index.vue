@@ -98,7 +98,7 @@ $image-width-small--mobile--320: 100px;
     min-height: 600px;
     max-height: 600px;
   }
-    @media screen and (min-height: 850px) and (max-width: 375px) {
+    @media screen and (min-height: 750px) and (max-width: 375px) {
     max-width: 320px;
     min-width: 320px;
     min-height: 500px;
