@@ -419,7 +419,7 @@ textarea {
 .success-message {
   position: fixed;
   right: -1000px;
-  top: -3px;
+  top: 15%;
   @media screen and (max-width: 414px) {
     width: 100%;
     top: 10px;
@@ -435,7 +435,7 @@ textarea {
   line-height: 1;
   transition: all 0.8s;
   &--active {
-    right: -100px;
+    right: 5%;
     @media screen and (max-width: 414px) {
       right: 50%;
       transform: translateX(50%);
