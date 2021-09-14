@@ -99,17 +99,17 @@
   "main-skills": {
     "frontend": {
       "title": "Front-End",
-      "subtitle": "4 YEARS",
+      "subtitle": "3 YEARS",
       "slug": "frontend"
     },
     "backend": {
       "title": "Back-End",
-      "subtitle": "4 YEARS",
+      "subtitle": "1 YEAR",
       "slug": "backend"
     },
     "android": {
       "title": "Android",
-      "subtitle": "4 YEARS",
+      "subtitle": "1 YEAR",
       "slug": "android"
     }
   },
