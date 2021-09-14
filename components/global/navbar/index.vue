@@ -11,7 +11,8 @@
         <NuxtLink class="navbar--item" to="/contact">Contact</NuxtLink>
       </div>
       <a
-        href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+        href="/Alireza_Moradi_Souran_Resume.pdf"
+        download="/Alireza_Moradi_Souran_Resume.pdf"
         class="float-right btn"
         aria-label="resume"
       >
@@ -112,7 +113,8 @@
         </svg>
       </button>
       <a
-        href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+        href="/Alireza_Moradi_Souran_Resume.pdf"
+        download="/Alireza_Moradi_Souran_Resume.pdf"
         class="float-right btn mr-8"
         aria-label="resume"
       >
@@ -135,7 +137,8 @@
           Contact
         </NuxtLink>
         <a
-          href="https://github.com/alisouran/cv-nuxt-js/raw/main/Alireza_Moradi_Souran_Resume.pdf"
+          href="/Alireza_Moradi_Souran_Resume.pdf"
+          download="/Alireza_Moradi_Souran_Resume.pdf"
           class="float-right btn mb-36"
           aria-label="resume"
         >
