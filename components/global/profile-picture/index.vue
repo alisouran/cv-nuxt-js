@@ -27,7 +27,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
 @use "sass:math";
 
 $image-width: 360px;
@@ -93,11 +92,17 @@ $image-width-small--mobile--320: 100px;
     min-height: 500px;
     max-height: 500px;
   }
-    @media screen and (min-height: 850px) and (max-width: 1920px) {
+  @media screen and (min-height: 850px) and (max-width: 1920px) {
     max-width: 360px;
     min-width: 360px;
     min-height: 600px;
     max-height: 600px;
+  }
+    @media screen and (min-height: 850px) and (max-width: 375px) {
+    max-width: 320px;
+    min-width: 320px;
+    min-height: 500px;
+    max-height: 500px;
   }
   @media screen and (min-height: 1024px) {
     max-width: 500px;
