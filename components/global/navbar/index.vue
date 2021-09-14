@@ -186,7 +186,7 @@ export default Vue.extend({
   display: flex;
   justify-content: space-between;
   height: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @media screen and (max-width: 750px) {
     height: 50px;
     margin-bottom: 10px;
