@@ -4,7 +4,11 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Front-End Developer from Iran; Working at Virgool.io." },
+      {
+        hid: "description",
+        name: "description",
+        content: "Front-End Developer from Iran; Working at Virgool.io."
+      },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
@@ -46,9 +50,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "@nuxtjs/robots"
   ],
-
+  robots: {
+    UserAgent: "*",
+    Disallow: "/user"
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
