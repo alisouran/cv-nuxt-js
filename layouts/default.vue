@@ -5,7 +5,7 @@
       class="loading"
       :class="loading ? '' : 'loading--deactive'"
     >
-      <img src="~/assets/img/icons/android-chrome-512x512.png" />
+      <img src="~/assets/img/icons/android-chrome-512x512.png" alt="Page Loader" />
     </div>
     <Navbar />
     <div

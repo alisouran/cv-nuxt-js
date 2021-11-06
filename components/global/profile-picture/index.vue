@@ -3,7 +3,7 @@
     class="image-container profile-pic"
     :class="isHome ? '' : 'image-container--not-home profile-pic--left'"
   >
-    <img src="~/assets/img/profile.png" />
+    <img src="~/assets/img/profile.png" :alt="imageAlt" />
   </div>
 </template>
 
@@ -15,7 +15,8 @@ export default Vue.extend({
   name: "ProfilePicture",
   data: () => {
     return {
-      image: json.picture
+      image: json.picture,
+      imageAlt: `${json.name.first} ${json.name.last}`
     };
   },
   computed: {

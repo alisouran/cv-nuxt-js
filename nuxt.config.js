@@ -4,7 +4,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "Front-End Developer from Iran; Working at Virgool.io." },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
