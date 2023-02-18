@@ -115,9 +115,9 @@
   },
   "who-am-i": {
     "description": {
-      "paragraph_1": "I am a computer science graduated from University of Kashan.",
-      "paragraph_2": "I have been learning different technologies for nearly four years and have been working as a web developer in this field for three years; I am a React Native starter. :)",
-      "paragraph_3": "I used to work as a freelancer, but now I'm working as a frontend developer at <a target='_blank' href='https://virgool.io'>Virgool.io</a>."
+      "paragraph_1": "Hi there! I'm Alireza Souran.",
+      "paragraph_2": "A frontend developer with expertise in React.js, Next.js, Vue.js, and Nuxt.js. I love creating beautiful and fully functional websites.",
+      "paragraph_3": "When I'm not coding, I enjoy playing guitar and drawing. Let's work together to bring your website vision to life. Thanks for stopping by, and I look forward to hearing from you soon!"
     }
   }
 }

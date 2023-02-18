@@ -1,32 +1,44 @@
 <template>
+
   <div class="container-fluid">
+
     <div
       class="row about-me-desc--container"
       :class="mobile ? 'pr-16 pl-16' : 'mt-36'"
       v-if="mobile"
     >
+
       <h4 class="tab-bar--item active">WHO AM I?</h4>
+
       <p class="about-me-desc mt-8">
-        I am a computer science graduated from University of Kashan.
+         I am a computer science graduated from University of Kashan.
       </p>
+
       <p class="about-me-desc mt-8">
-        I have been learning different technologies for nearly five years and
-        have been working as a web developer in this field for four years; I am
-        a React Native starter. :)
+         I have been learning different technologies for nearly five years and have
+        been working as a web developer in this field for four years; I am a React
+        Native starter. :)
       </p>
+
       <p class="about-me-desc mt-8">
-        I used to work as a freelancer, but now I'm working as a frontend
-        developer at <img src="/img/icons/virgool.svg" /> Virgool.
+         I used to work as a freelancer, but now I'm working as a frontend developer
+        at
+        <img src="/img/icons/virgool.svg" />
+         Virgool.
       </p>
+
     </div>
+
     <div class="row" :class="mobile ? 'tab-bar' : ''">
+
       <div
         @click="activateItem('skills')"
         class="d-block tab-bar--item"
         :class="active === 'skills' ? 'active' : ''"
       >
-        SKILLS
+         SKILLS
       </div>
+
       <div
         @click="activateItem(skill.slug)"
         class=" d-block tab-bar--item"
@@ -34,9 +46,11 @@
         :key="skill.slug"
         :class="[active === skill.slug ? 'active' : '', mobile ? '' : 'ml-24 ']"
       >
-        {{ skill.title.toUpperCase() }}
+         {{ skill.title.toUpperCase() }}
       </div>
+
     </div>
+
     <div
       class="row mt-24"
       :style="
@@ -53,6 +67,7 @@
         mobile ? '' : 'mt-24 mb-24'
       ]"
     >
+
       <div
         v-for="skill in mainSkills"
         v-show="getSlugs(skill.slug)"
@@ -67,6 +82,7 @@
           margin: mobile ? (active === skill.slug ? '0 auto' : '') : ''
         }"
       >
+
         <ProgressCircle
           :data="data[skill.slug]"
           :notExpandedTitle="skill.title"
@@ -84,22 +100,30 @@
           :title="mainSkill.title"
           :levels="['Starter', 'Junior', 'Mid-Level', 'Expert', 'Senior']"
         />
+
       </div>
+
     </div>
+
     <div
       class="row "
       :class="mobile ? 'about-me-desc--container' : ''"
       v-if="!mobile"
     >
+
       <h4 class="tab-bar--item active">WHO AM I?</h4>
+
       <p
         v-for="(p, i) in whoAmI"
         v-html="p"
         :key="i"
-        class="about-me-desc mt-8"
+        class="about-me-desc mt-8 block w-full"
       ></p>
+
     </div>
+
   </div>
+
 </template>
 
 <script lang="ts">
@@ -203,4 +227,11 @@ h4 {
 .progress-container {
   gap: 20px;
 }
+.block {
+  display: block;
+}
+.w-full {
+  width: 100%;
+}
 </style>
+
